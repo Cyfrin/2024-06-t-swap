@@ -1,7 +1,27 @@
 
-<p align="center">
-<img src="https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/yy5s3jzxfd9zula8go0q?_a=BATAUVAA0" width="200" alt="t-swap">
-<br/>
+# First Flight #18: TSwap
+
+- [Contest Details](#contest-details)
+    - [Prize Pool](#prize-pool)
+    - [Stats](#stats)
+  - [TSwap](#tswap)
+  - [TSwap Pools](#tswap-pools)
+  - [Liquidity Providers](#liquidity-providers)
+    - [Why would I want to add tokens to the pool?](#why-would-i-want-to-add-tokens-to-the-pool)
+    - [LP Example](#lp-example)
+  - [Core Invariant](#core-invariant)
+  - [Make a swap](#make-a-swap)
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Quickstart](#quickstart)
+- [Usage](#usage)
+  - [Testing](#testing)
+    - [Test Coverage](#test-coverage)
+- [Audit Scope Details](#audit-scope-details)
+  - [Actors / Roles](#actors--roles)
+  - [Known Issues](#known-issues)
+
+[//]: # (contest-details-open)
 
 _If you've taken the [Cyfrin Updraft security & auditing course](https://updraft.cyfrin.io/courses/security), this will look very familiar to you!_
 
@@ -24,27 +44,6 @@ _This will be one of the more challenging first flights, but understanding the b
   - 276
 - Complexity Score:
   - 174
-
-- [Contest Details](#contest-details)
-    - [Prize Pool](#prize-pool)
-    - [Stats](#stats)
-  - [TSwap](#tswap)
-  - [TSwap Pools](#tswap-pools)
-  - [Liquidity Providers](#liquidity-providers)
-    - [Why would I want to add tokens to the pool?](#why-would-i-want-to-add-tokens-to-the-pool)
-    - [LP Example](#lp-example)
-  - [Core Invariant](#core-invariant)
-  - [Make a swap](#make-a-swap)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-- [Usage](#usage)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-- [Audit Scope Details](#audit-scope-details)
-  - [Actors / Roles](#actors--roles)
-  - [Known Issues](#known-issues)
-
 
 ## TSwap 
 
@@ -132,8 +131,15 @@ After a pool has liquidity, there are 2 functions users can call to swap tokens 
 
 A user can either choose exactly how much to input (ie: I want to use 10 USDC to get however much WETH the market says it is), or they can choose exactly how much they want to get out (ie: I want to get 10 WETH from however much USDC the market says it is. 
 
+## Actors / Roles
+- Liquidity Providers: Users who have liquidity deposited into the pools. Their shares are represented by the LP ERC20 tokens. They gain a 0.3% fee every time a swap is made. 
+- Users: Users who want to swap tokens.
+
 *This codebase is based loosely on [Uniswap v1](https://github.com/Uniswap/v1-contracts/tree/master)*
 
+[//]: # (contest-details-close)
+
+[//]: # (getting-started-open)
 
 # Getting Started
 
@@ -172,6 +178,10 @@ and for coverage based testing:
 forge coverage --report debug
 ```
 
+[//]: # (getting-started-close)
+
+[//]: # (scope-open)
+
 # Audit Scope Details
 
 - Commit Hash: XXX
@@ -185,11 +195,13 @@ forge coverage --report debug
 - Chain(s) to deploy contract to: Ethereum
 - Tokens:
   - Any ERC20 token
+ 
+[//]: # (scope-close)
 
-## Actors / Roles
-- Liquidity Providers: Users who have liquidity deposited into the pools. Their shares are represented by the LP ERC20 tokens. They gain a 0.3% fee every time a swap is made. 
-- Users: Users who want to swap tokens.
+[//]: # (known-issues-open)
 
 ## Known Issues
 
 - None
+
+[//]: # (known-issues-close)
