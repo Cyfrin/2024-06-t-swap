@@ -21,12 +21,6 @@
   - [Actors / Roles](#actors--roles)
   - [Known Issues](#known-issues)
 
-[//]: # (contest-details-open)
-
-_If you've taken the [Cyfrin Updraft security & auditing course](https://updraft.cyfrin.io/courses/security), this will look very familiar to you!_
-
-_This will be one of the more challenging first flights, but understanding the basics of how a DEX works will be crucial if you want to get good at auditing DeFi smart contracts._
-
 # Contest Details
 
 ### Prize Pool
@@ -44,6 +38,12 @@ _This will be one of the more challenging first flights, but understanding the b
   - 276
 - Complexity Score:
   - 174
+
+[//]: # (contest-details-open)
+
+_If you've taken the [Cyfrin Updraft security & auditing course](https://updraft.cyfrin.io/courses/security), this will look very familiar to you!_
+
+_This will be one of the more challenging first flights, but understanding the basics of how a DEX works will be crucial if you want to get good at auditing DeFi smart contracts._
 
 ## TSwap 
 
